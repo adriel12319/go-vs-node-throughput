@@ -1,0 +1,5 @@
+{
+  "product": "SELECT id, tenant_id, category_id, name, price_cents, stock FROM products WHERE id = $1",
+  "list": "SELECT id, tenant_id, category_id, name, price_cents, stock FROM products WHERE tenant_id = $1 AND category_id = $2 AND active = true AND id > $3 ORDER BY id LIMIT $4",
+  "reserve": "UPDATE inventory SET available = available - 1 WHERE product_id = $1 AND available > 0 RETURNING product_id, available"
+}

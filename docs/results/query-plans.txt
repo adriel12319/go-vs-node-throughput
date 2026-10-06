@@ -1,0 +1,17 @@
+Index Scan using products_pkey on products  (cost=0.43..2.65 rows=1 width=36) (actual time=0.069..0.069 rows=1 loops=1)
+  Index Cond: (id = 1234567)
+  Buffers: shared hit=4
+Planning:
+  Buffers: shared hit=107
+Planning Time: 0.877 ms
+Execution Time: 0.145 ms
+Limit  (cost=0.43..1.33 rows=20 width=36) (actual time=0.026..0.029 rows=20 loops=1)
+  Buffers: shared hit=4
+  ->  Index Only Scan using products_tenant_category_page on products  (cost=0.43..2.64 rows=49 width=36) (actual time=0.025..0.027 rows=20 loops=1)
+        Index Cond: ((tenant_id = 123) AND (category_id = 45) AND (id > 0))
+        Heap Fetches: 0
+        Buffers: shared hit=4
+Planning:
+  Buffers: shared hit=14
+Planning Time: 0.174 ms
+Execution Time: 0.057 ms

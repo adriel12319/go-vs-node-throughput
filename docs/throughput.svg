@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" font-family="Segoe UI, DejaVu Sans, Arial, sans-serif">
+<rect width="1200" height="675" fill="#fcfcfb"/>
+<text x="100" y="70" font-size="38" font-weight="700" fill="#0b0b0b">Go vs Node.js: requests per second</text>
+<text x="100" y="108" font-size="20" fill="#52514e">Same API, same SQL, PostgreSQL with 5.1 million rows · 2 CPUs and 512 MB per backend · 64 clients</text>
+<rect x="100" y="134" width="18" height="18" rx="4" fill="#2a78d6"/><text x="126" y="149" font-size="20" fill="#0b0b0b">Go</text>
+<rect x="230" y="134" width="18" height="18" rx="4" fill="#eb6834"/><text x="256" y="149" font-size="20" fill="#0b0b0b">Node.js</text>
+<line x1="100" x2="1140" y1="560" y2="560" stroke="#8a8983" stroke-width="1"/><text x="88" y="566" font-size="16" text-anchor="end" fill="#52514e">0</text>
+<line x1="100" x2="1140" y1="467.5" y2="467.5" stroke="#e6e5e0" stroke-width="1"/><text x="88" y="473.5" font-size="16" text-anchor="end" fill="#52514e">4k</text>
+<line x1="100" x2="1140" y1="375" y2="375" stroke="#e6e5e0" stroke-width="1"/><text x="88" y="381" font-size="16" text-anchor="end" fill="#52514e">8k</text>
+<line x1="100" x2="1140" y1="282.5" y2="282.5" stroke="#e6e5e0" stroke-width="1"/><text x="88" y="288.5" font-size="16" text-anchor="end" fill="#52514e">12k</text>
+<line x1="100" x2="1140" y1="190" y2="190" stroke="#e6e5e0" stroke-width="1"/><text x="88" y="196" font-size="16" text-anchor="end" fill="#52514e">16k</text>
+<path d="M151.33333333333337,560 v-328.6264210800045 q0,-4 4,-4 h112 q4,0 4,4 v328.6264210800045 z" fill="#2a78d6"/><text x="211.33333333333337" y="217.3735789199955" font-size="22" font-weight="600" text-anchor="middle" fill="#0b0b0b">14,384</text>
+<path d="M275.33333333333337,560 v-222.18187220205493 q0,-4 4,-4 h112 q4,0 4,4 v222.18187220205493 z" fill="#eb6834"/><text x="335.33333333333337" y="323.81812779794507" font-size="22" font-weight="600" text-anchor="middle" fill="#0b0b0b">9,781</text>
+<text x="273.33333333333337" y="594" font-size="21" font-weight="600" text-anchor="middle" fill="#0b0b0b">Lookup by ID</text><text x="273.33333333333337" y="622" font-size="18" text-anchor="middle" fill="#52514e">Go +47%</text>
+<path d="M498,560 v-256.95217304096906 q0,-4 4,-4 h112 q4,0 4,4 v256.95217304096906 z" fill="#2a78d6"/><text x="558" y="289.04782695903094" font-size="22" font-weight="600" text-anchor="middle" fill="#0b0b0b">11,284</text>
+<path d="M622,560 v-169.1223813590052 q0,-4 4,-4 h112 q4,0 4,4 v169.1223813590052 z" fill="#eb6834"/><text x="682" y="376.8776186409948" font-size="22" font-weight="600" text-anchor="middle" fill="#0b0b0b">7,486</text>
+<text x="620" y="594" font-size="21" font-weight="600" text-anchor="middle" fill="#0b0b0b">Paginated list</text><text x="620" y="622" font-size="18" text-anchor="middle" fill="#52514e">Go +51%</text>
+<path d="M844.6666666666667,560 v-313.2743472428104 q0,-4 4,-4 h112 q4,0 4,4 v313.2743472428104 z" fill="#2a78d6"/><text x="904.6666666666667" y="232.7256527571896" font-size="22" font-weight="600" text-anchor="middle" fill="#0b0b0b">13,720</text>
+<path d="M968.6666666666667,560 v-210.06781411736165 q0,-4 4,-4 h112 q4,0 4,4 v210.06781411736165 z" fill="#eb6834"/><text x="1028.6666666666667" y="335.93218588263835" font-size="22" font-weight="600" text-anchor="middle" fill="#0b0b0b">9,257</text>
+<text x="966.6666666666667" y="594" font-size="21" font-weight="600" text-anchor="middle" fill="#0b0b0b">Mixed (70/20/10)</text><text x="966.6666666666667" y="622" font-size="18" text-anchor="middle" fill="#52514e">Go +48%</text>
+<text x="100" y="657" font-size="15" fill="#52514e">Median of three 30 s runs per scenario, zero errors. Go 1.27 (net/http + pgx) · Node.js 24 (node:http + pg) · PostgreSQL 17</text>
+</svg>
